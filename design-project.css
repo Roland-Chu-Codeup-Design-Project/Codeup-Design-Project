@@ -1,0 +1,53 @@
+body {
+    background-color: #F0F0F0;
+}
+
+
+.btn-circle.btn-xl {
+    width: 100px;
+    height: 100px;
+    padding: 13px 18px;
+    border-radius: 60px;
+    font-size: 15px;
+    text-align: center;
+    border-width: thick;
+    border-color: white;
+
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: inline-block;
+
+
+}
+
+nav {
+    background-color: #F0F0F0;
+
+}
+
+
+.red {
+    background-color: #e6563b;
+
+}
+
+.orange {
+    background-color: #eb9d3a;
+}
+
+.green {
+    background-color: #7cb06c;
+}
+
+.blue {
+    background-color: #00aba9;
+}
+
+
+
