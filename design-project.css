@@ -1,8 +1,26 @@
 
-
-
 body {
     background-color: #F0F0F0;
+}
+
+h1 h2 {
+    font-family: 'Anton', sans-serif;
+
+}
+
+h5 {
+    font-family: 'Abel', sans-serif;
+}
+
+.card {
+    background-color: #F0F0F0;
+
+}
+
+.card-img-top {
+    border: 1rem solid #E6E6E6
+
+
 }
 
 
@@ -11,20 +29,27 @@ body {
     height: 100px;
     padding: 13px 18px;
     border-radius: 60px;
-    font-size: 15px;
-    text-align: center;
+    font-size: 12px;
     border-width: thick;
     border-color: white;
+    color: white;
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+
 
 }
 
 .dot {
-    height: 25px;
-    width: 25px;
+    height: 18px;
+    width: 18px;
     background-color: #bbb;
     border-radius: 50%;
     margin-left: 10px;
     display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+
 
 
 }
