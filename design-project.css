@@ -21,11 +21,7 @@ h5 {
 
 }
 
-.card-img-top {
-    border: 1rem solid #E6E6E6
 
-
-}
 
 
 .btn-circle.btn-xl {
@@ -53,6 +49,10 @@ h5 {
     font-size: 12px;
 
 
+}
+
+.adjustImage{
+    width: 100%;
 }
 
 nav {
