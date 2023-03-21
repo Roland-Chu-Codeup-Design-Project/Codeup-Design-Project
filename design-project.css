@@ -90,4 +90,28 @@ nav {
 }
 
 
+.FloatProperty {
+    float: left;
+    width: 456px;
+    height: 333px;
+}
+
+
+.largeScreenImage {
+    width: 100px;
+    height: 100px;
+
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .LargeContent {
+        display: none;
+    }
+
+
+}
+
+
 
