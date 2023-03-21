@@ -22,8 +22,6 @@ h5 {
 }
 
 
-
-
 .btn-circle.btn-xl {
     width: 100px;
     height: 100px;
@@ -50,13 +48,11 @@ h5 {
     font-size: 12px;
 
 
-
 }
 
-.adjustImage{
+.adjustImage {
     width: 100%;
 }
-
 
 
 nav {
@@ -80,6 +76,17 @@ nav {
 
 .blue {
     background-color: #00aba9;
+}
+
+
+@media (max-width: 576px ) {
+
+    .Bar {
+        display: none;
+
+    }
+
+
 }
 
 
