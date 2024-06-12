@@ -1,128 +1,128 @@
 body {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 h1,
 h2 {
-    font-family: "Anton", sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 h5 {
-    font-family: "Abel", sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 .navbar-logo {
-    height: 105px;
-    width: 105px;
+  height: 105px;
+  width: 105px;
 }
 
 .btn-circle.btn-xl {
-    width: 100px;
-    height: 100px;
-    border-radius: 60px;
-    font-size: 12px;
-    border: 2px solid white;
-    color: white;
-    font-weight: bold;
-    font-family: "Abel", sans-serif;
-    padding-top: 35px;
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  font-size: 12px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-family: "Abel", sans-serif;
+  padding-top: 35px;
 }
 
 .dot {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin-left: 10px;
-    padding: 1px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 12px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-left: 10px;
+  padding: 1px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
 }
 
 .red {
-    background-color: #e6563b;
+  background-color: #e6563b;
 }
 
 .orange {
-    background-color: #eb9d3a;
+  background-color: #eb9d3a;
 }
 
 .green {
-    background-color: #7cb06c;
+  background-color: #7cb06c;
 }
 
 .blue {
-    background-color: #00aba9;
+  background-color: #00aba9;
 }
 
 .divider {
-    margin-top: 40px;
-    border: solid;
+  margin-top: 40px;
+  border: solid;
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .project-container {
-    flex-basis: calc(33.33% - 20px);
-    max-width: 300px;
-    margin-bottom: 20px;
-    text-align: center;
+  flex-basis: calc(33.33% - 20px);
+  max-width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
 }
 
 .project-name {
-    text-align: center;
-    margin-bottom: 5px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .dot-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-fluid {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 /* Adjust the layout for different screen sizes */
 @media (max-width: 576px) {
-    .divider {
-        display: none;
-    }
+  .divider {
+    display: none;
+  }
 
-    .project-container {
-        flex-basis: 100%;
-        max-width: none;
-    }
+  .project-container {
+    flex-basis: 100%;
+    max-width: none;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .project-container {
-        flex-basis: calc(50% - 20px);
-    }
+  .project-container {
+    flex-basis: calc(50% - 20px);
+  }
 }
 
 @media (min-width: 768px) {
-    .project-container {
-        flex-basis: calc(33.33% - 20px);
-    }
+  .project-container {
+    flex-basis: calc(33.33% - 20px);
+  }
 }
