@@ -61,66 +61,39 @@ h5 {
     border: solid;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-container {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .project-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
 }
 
 .project-name {
     flex-grow: 1;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.col-md-4 {
-    flex-basis: calc(33.33% - 20px);
-    margin-bottom: 20px;
-}
-
-.large-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.stacked-images {
-    margin-bottom: 20px;
-}
-
-
-/* ... existing styles ... */
-
-.stacked-images img {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    max-width: 300px; /* Set a maximum width for the images */
-    height: auto; /* Maintain the aspect ratio */
-    margin-bottom: 20px;
-    object-fit: contain; /* Ensure the image fits within the specified dimensions without stretching */
-}
-
-.stacked-images h4 {
     text-align: center;
-    margin-top: 10px;
 }
 
-/* Additional styles for the project info section */
-.project-info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.project-info .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
+.img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 /* Adjust the layout for different screen sizes */
@@ -129,43 +102,20 @@ h5 {
         display: none;
     }
 
-    .large-content {
-        display: block;
+    .project-container {
+        flex-basis: 100%;
+        max-width: none;
     }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .large-content {
-        display: block;
+    .project-container {
+        flex-basis: calc(50% - 20px);
     }
 }
 
 @media (min-width: 768px) {
-    .large-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* ... existing styles ... */
-
-
-
-
-
-
-
-
-
-@media (max-width: 576px) {
-    .divider {
-        display: none;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    .large-content {
-        display: none;
+    .project-container {
+        flex-basis: calc(33.33% - 20px);
     }
 }
