@@ -1,69 +1,47 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
 }
 
-h1 h2 {
-    font-family: 'Anton', sans-serif;
-
-
+h1,
+h2 {
+    font-family: "Anton", sans-serif;
 }
 
 h5 {
-    font-family: 'Abel', sans-serif;
+    font-family: "Abel", sans-serif;
 }
 
-.card {
-    background-color: #F0F0F0;
-
+.navbar-logo {
+    height: 105px;
+    width: 105px;
 }
-
 
 .btn-circle.btn-xl {
     width: 100px;
     height: 100px;
     border-radius: 60px;
     font-size: 12px;
-    border-width: thick;
-    border-color: white;
+    border: 2px solid white;
     color: white;
     font-weight: bold;
-    font-family: 'Abel', sans-serif;
+    font-family: "Abel", sans-serif;
     padding-top: 35px;
 }
 
 .dot {
-    height: 18px;
+    display: inline-block;
     width: 18px;
-    background-color: #bbb;
+    height: 18px;
     border-radius: 50%;
     margin-left: 10px;
     padding: 1px;
-    display: inline-block;
     font-weight: bold;
     text-align: center;
     font-size: 12px;
-
-
 }
-
-.adjustImage {
-    width: 100%;
-}
-
-
-nav {
-    background-color: #F0F0F0;
-
-}
-
 
 .red {
     background-color: #e6563b;
-
 }
 
 .orange {
@@ -78,40 +56,73 @@ nav {
     background-color: #00aba9;
 }
 
+.divider {
+    margin-top: 40px;
+    border: solid;
+}
 
-@media (max-width: 576px ) {
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-    .Bar {
+.project-container {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
+
+.project-name {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Adjust the layout for different screen sizes */
+@media (max-width: 576px) {
+    .divider {
         display: none;
-
     }
 
-
+    .project-container {
+        flex-basis: 100%;
+        max-width: none;
+    }
 }
-
-
-.FloatProperty {
-    float: left;
-    width: 456px;
-    height: 333px;
-}
-
-
-.largeScreenImage {
-    width: 100px;
-    height: 100px;
-
-}
-
 
 @media (min-width: 576px) and (max-width: 768px) {
-
-    .LargeContent {
-        display: none;
+    .project-container {
+        flex-basis: calc(50% - 20px);
     }
-
-
 }
 
-
-
+@media (min-width: 768px) {
+    .project-container {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
