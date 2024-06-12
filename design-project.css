@@ -77,6 +77,7 @@ h5 {
 
 .project-info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -85,8 +86,14 @@ h5 {
 }
 
 .project-name {
-    flex-grow: 1;
     text-align: center;
+    margin-bottom: 5px;
+}
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-fluid {
